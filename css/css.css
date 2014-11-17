@@ -1,0 +1,205 @@
+/*******************************************
+				Defaults
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+
+} 
+
+body{
+    background: url("../img/nature-green-highway-landscapes-trees-wallpaper-37781.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 700;
+   background-color: #B20002;
+   color: white;
+   text-align:center;
+   padding: 10px;
+}
+h2{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 400;
+}
+p{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 200;
+   font-size: 12px;
+}
+
+/*******************************************
+				Layout
+*******************************************/
+.wrapper{
+    padding: 10px;
+    margin: 50px 15px;
+    display: hidden;
+    max-width: 800px;
+    background-color: #FFFFFA;
+}
+.masthead{
+    text-align: center;
+}
+.main{
+    padding: 5px;
+    margin: 0;
+    border: 10px;
+    height: 750px;
+    background-color: #FFFFFA;
+}
+.foot{
+  font-size: 12px;
+   clear:both;
+   margin-top: 30px;
+   background-color: #B20002;
+}
+
+
+/*******************************************
+				Form Styles
+*******************************************/
+.formBox, .buttons{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    
+}
+.formBox:nth-child(1){
+    margin-top: 30px;
+}
+
+label{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    background-color: #CC6B6C;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 7px;
+    width: 100%;
+    float:left;
+    
+}
+
+input[type=text],
+input[type=number],
+input[type=date]{
+	font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 5px;
+    
+}
+input[type=submit],
+input[type=reset]{
+	font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 2px;
+    margin-top: 5px;
+    background-color:#BDE6FF;
+    
+}
+#priceicon{
+    width: 20px;
+    height: 20px;
+    margin-bottom: -2px;
+    margin-top: 5px;
+}
+#calendaricon{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#adulticon{
+    width:20px;
+    height:20px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.credit{
+    font-size: 7px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    background-color: #B20002;
+    color: white;
+}
+#cityicon{
+    width:20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+a{
+    color: #BDE6FF;
+}
+
+/*******************************************
+             Responsive Columns
+*******************************************/
+
+@media all min-width 10px and max-width 500px{ 
+ 	.formBox{
+		float: left;
+		width: 24.13%;
+	}
+
+	.col{
+		float: left;
+		width: 49.3%;
+	}
+
+	.main{
+		height: 380px;
+	}
+}
+
+@media all min-width 500px and max-width 780px{ 
+	.formBox{
+		float: left;
+		width: 48.8%;
+	}
+	.col{
+		float: left;
+		width: 48.6%;
+	}
+	.main{
+		height: 460px;
+	}
+}
+
+@media screen and (min-width: 780px){ /*four columns*/
+	.formBox{
+		float: left;
+		width: 24.13%;
+	}
+	.col{
+		float: left;
+		width: 49.3%;
+	}	
+	.main{
+		height: 380px;
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1080px){ 
+	.formBox{
+		float: left;
+		width: 23.9%;
+	}
+	.col{
+		float: left;
+		width: 49%;
+	}
+
+}
